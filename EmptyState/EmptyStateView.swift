@@ -65,9 +65,6 @@ class EmptyStateView: UIView {
         
         // Make the view stretch with containing view
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
-        CommonFunctions.shared.setCornerRadiusForView(emptyStateButton, cornerRadius: 5.0)
-        
-        CommonFunctions.shared.applyGradient(view: emptyStateButton)
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
     }
